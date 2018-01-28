@@ -1,9 +1,9 @@
 $packageName = 'Julia'
 $installerType = 'exe'
-$chk32 = '8338d599a39701ce2710d077519f9a4e4d17960d6c7aa4115ad15ede248d5bd6';
-$chk64 = 'fff2208555e0c9fb93a1aad95e16ddab9f4983d5c37179edcd721203d6278067';
-$url32 = 'https://julialang-s3.julialang.org/bin/winnt/x86/0.6/julia-0.6.0-win32.exe'
-$url64 = 'https://julialang-s3.julialang.org/bin/winnt/x64/0.6/julia-0.6.0-win64.exe'
+$chk32 = 'e880e447fdf679df2d8a51960aa82770c77b970de27582404a68e1604a845948';
+$chk64 = 'acbc61bb8056f7275f5e8f5bfafe744977201573d06cf4b4151fe4ae6721f176';
+$url32 = 'https://julialang-s3.julialang.org/bin/winnt/x86/0.6/julia-0.6.2-win32.exe'
+$url64 = 'https://julialang-s3.julialang.org/bin/winnt/x64/0.6/julia-0.6.2-win64.exe'
 $silentArgs = "/S"
  
 Install-ChocolateyPackage -checksum $chk32 -checksumType sha256 -checksum64 $chk64 -checksumType64 sha256 "$packageName" "$installerType" "$silentArgs" "$url32" "$url64"
